@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f5f3ff;
+  background: #080711;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 90vh;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(155, 89, 182, 0.35), transparent 30%),
+    radial-gradient(circle at 80% 40%, rgba(88, 101, 242, 0.35), transparent 30%),
+    linear-gradient(135deg, #090816 0%, #181027 45%, #23113d 100%);
+  padding: 24px;
+}
+
+nav, .page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 0;
+}
+
+.page-nav {
+  padding: 24px;
+}
+
+.logo {
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #c084fc;
+}
+
+.links {
+  display: flex;
+  gap: 18px;
+  font-size: 14px;
+  color: #d8ccff;
+}
+
+.links a:hover {
+  color: #ffffff;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 130px auto 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: clamp(48px, 9vw, 108px);
+  margin: 0;
+  line-height: 1;
+}
+
+.hero-content p {
+  max-width: 720px;
+  margin: 24px auto;
+  color: #ded7ff;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.button {
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.primary {
+  background: #5865f2;
+  color: white;
+}
+
+.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #f5f3ff;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card, .support-box {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.card h2, .info h2, .document h1, .document h2 {
+  color: #d8b4fe;
+}
+
+.info, .document {
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.document {
+  max-width: 900px;
+}
+
+.document p, .document li, .info p {
+  color: #e9ddff;
+}
+
+footer {
+  text-align: center;
+  color: #b7a8d9;
+  padding: 32px 24px;
+}
+
+@media (max-width: 800px) {
+  nav, .page-nav {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    margin-top: 80px;
+  }
+}
